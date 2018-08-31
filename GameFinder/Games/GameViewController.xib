@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameDetailViewController" customModule="GameFinder" customModuleProvider="target">
+            <connections>
+                <outlet property="nameField" destination="mw6-Ec-4pK" id="flV-Mb-tKC"/>
+                <outlet property="timeField" destination="9Nn-0a-fE4" id="J6g-3i-fNx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mw6-Ec-4pK">
+                    <rect key="frame" x="37" y="94" width="300" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6y-lK-c05">
+                    <rect key="frame" x="37" y="132" width="88" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyx-aL-REn">
+                    <rect key="frame" x="37" y="65" width="95" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Nn-0a-fE4">
+                    <rect key="frame" x="37" y="161" width="300" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="m6y-lK-c05" firstAttribute="leading" secondItem="mw6-Ec-4pK" secondAttribute="leading" id="DMY-E1-pr8"/>
+                <constraint firstItem="mw6-Ec-4pK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DSs-dU-f3l"/>
+                <constraint firstItem="nyx-aL-REn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="KrU-EO-yCf"/>
+                <constraint firstItem="mw6-Ec-4pK" firstAttribute="leading" secondItem="nyx-aL-REn" secondAttribute="leading" id="KuZ-Kn-q1g"/>
+                <constraint firstItem="nyx-aL-REn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="45" id="RdP-aS-ggK"/>
+                <constraint firstItem="mw6-Ec-4pK" firstAttribute="top" secondItem="nyx-aL-REn" secondAttribute="bottom" constant="8" symbolic="YES" id="bLp-C9-ih8"/>
+                <constraint firstItem="9Nn-0a-fE4" firstAttribute="leading" secondItem="m6y-lK-c05" secondAttribute="leading" id="ikf-41-TsB"/>
+                <constraint firstItem="9Nn-0a-fE4" firstAttribute="top" secondItem="m6y-lK-c05" secondAttribute="bottom" constant="8" symbolic="YES" id="kcj-P3-AA8"/>
+                <constraint firstItem="9Nn-0a-fE4" firstAttribute="trailing" secondItem="mw6-Ec-4pK" secondAttribute="trailing" id="olv-Br-p9P"/>
+                <constraint firstItem="m6y-lK-c05" firstAttribute="top" secondItem="mw6-Ec-4pK" secondAttribute="bottom" constant="8" symbolic="YES" id="qWF-6v-ckf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
